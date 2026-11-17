@@ -60,7 +60,7 @@ public class ProductionManagement {
     }
     
 
-    public boolean processProduction(int units, int materialPerUnit, boolean workerBusy,boolean machineBusy, int usageMinutes, int serviceInterval, int failures) {
+    public boolean processProduction(int units, int materialPerUnit, boolean workerBusy,boolean machineBusy,int usageMinutes, int serviceInterval, int failures) {
         
         int demand = stock.calculateRequiredMaterial(units, materialPerUnit, 0);
         

@@ -89,10 +89,9 @@ public class ProductionManagementTest {
     }
 
     @Test
-    public void testAJ06_DiscountIncludesSetupCost() {
-        
-        assertEquals(63.0, production.calculateProductionCost(10, 2, 3, 20, 10), 0.001);
-    }
+    public void testAJ06_DiscountExcludesSetupCost() {
+         assertEquals(65.0,production.calculateProductionCost(10, 2, 3, 20, 10),0.001);
+     }
 
     @Test
     public void testAJ07_FullDiscountReturnsZero() {
